@@ -1,0 +1,35 @@
+.presence {
+    height: 65px;
+    background: #3f0e40;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.presence:hover {
+    background: #350437;
+}
+
+.presence:hover > .row > .user-full-name {
+    color: white;
+}
+
+.presence > .row {
+    margin: 0;
+}
+
+.presence > .row > .workspace-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.presence > .row > .user-full-name {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #bbb;
+}
+
