@@ -10,10 +10,6 @@
     background: #350437;
 }
 
-.presence:hover > .row > .user-full-name {
-    color: white;
-}
-
 .presence > .row {
     margin: 0;
 }
@@ -32,4 +28,48 @@
     margin: 0;
     color: #bbb;
 }
+
+.presence:hover > .row > .user-full-name {
+    color: white;
+}
+
+.presence > .row > .notifications {
+    color: #bbb;
+}
+
+.presence > .row > .notifications:hover {
+    color: white;
+}
+
+.presence > .row > .notifications > span {
+    font-size: 1.24rem;
+    vertical-align: middle;
+}
+
+.presence > .row > .ddown {
+    color: #bbb;
+}
+
+.presence:hover > .row > .ddown {
+    color: white;
+}
+
+.presence > .row > .ddown > span {
+    font-size: 0.8rem;
+    vertical-align: text-bottom;
+    padding-right: 7px;
+    padding-left: 3px;
+}
+
+.presence > .row > .presence-indicator {
+    margin-top: -4px;
+    margin-left: 1px;
+}
+
+.presence > .row > .presence-indicator > span {
+    font-size: 0.55rem;
+    width: 15px;
+    color: teal;
+}
+
 
