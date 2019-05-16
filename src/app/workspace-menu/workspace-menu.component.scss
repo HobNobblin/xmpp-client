@@ -2,6 +2,90 @@
     float:left;
     height: 100%;
     background: #200720;
-    width: 70px;
+    width: 65px;
     color: white;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.workspace-icon {
+    margin:13px;
+    width: 37px;
+    height: 37px;
+    background: #3a243a;
+    border-radius: 6%;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.workspace-icon.selected {
+    background: #635263;
+}
+
+.workspace-icon:hover {
+    box-shadow: 0px 0px 1px 4px #584558;
+}
+
+.workspace-icon > p {
+    color: #796a79;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.workspace-icon.selected > p {
+    color: white;
+}
+
+.add-workspace-icon {
+    margin:13px;
+    width: 37px;
+    height: 37px;
+    background: #534653;
+    border-radius: 6%;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.add-workspace-icon:hover {
+    background: #8f828f;
+}
+
+.add-workspace-icon > p {
+    color: #200720;
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+    line-height: 0.7;
+}
+
+.selected-workspace {
+    margin:0;
+    width: 25px;
+    height: 36px;
+    background: #8f838f;
+    border-radius: 13%;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    float: left;
+    margin-left: -34px;
+}
+
+.workspace-messages {
+    margin:0;
+    width: 25px;
+    height: 5px;
+    background: #8f838f;
+    border-radius: 13%;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    float: left;
+    margin-left: -34px;
+    margin-top: 15px;
 }

@@ -1,5 +1,63 @@
 <div class="chat-menu">
-    Chat Menu
-    chat
-    chat
+    <div class="row">
+        <div class="chat-menu-icons">
+            <span class="fa fa-align-left" aria-hidden="true"></span>
+        </div>
+        <div class="chat-menu-text">
+            All Unreads
+        </div>
+    </div>
+    <div class="row">
+        <div class="chat-menu-icons">
+            <span class="fa fa-comment" aria-hidden="true"></span>
+        </div>
+        <div class="chat-menu-text">
+            Threads
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 15px;">
+        <div class="chat-menu-text">
+            Channels
+        </div>
+    </div>
+
+    <div *ngFor="let channel of channels" class="row">
+        <div class="chat-menu-icons">
+            <p>#</p>
+        </div>
+        <div class="chat-menu-text" [ngClass]="{'channel-active': channel.newMessages == true}" [ngStyle]="{'width': channel.noticeCount > 0 ? '155px' : 'unset'}">
+            {{channel.name}}
+        </div>
+        <div *ngIf="channel.noticeCount > 0" class="chat-menu-notice-count">
+            <p>{{channel.noticeCount}}</p>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 15px;">
+        <div class="chat-menu-text" style="width:180px;">
+            Direct Messages
+        </div>
+        <div class="chat-menu-icons">
+            <span class="fa fa-align-left" aria-hidden="true"></span>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 15px;">
+        <div class="chat-menu-icons" style="margin-top: -4px;">
+            <p>+</p>
+        </div>
+        <div class="chat-menu-text">
+            Invite people
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 15px;">
+        <div class="chat-menu-text" style="width:180px;">
+            Apps
+        </div>
+        <div class="chat-menu-icons">
+            <span class="fa fa-align-left" aria-hidden="true"></span>
+        </div>
+    </div>
 </div>

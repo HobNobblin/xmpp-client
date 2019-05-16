@@ -1,3 +1,13 @@
 <div class="workspace-menu">
-    WorkSpace Menu
+    <div *ngFor="let workspace of workspaces" class="workspace-icon" [class.selected]="workspace.id == selectedSpace" (click)="workspaceSelected(workspace.id)">
+        <div *ngIf="workspace.id == selectedSpace" class="selected-workspace">
+        </div>
+        <div *ngIf="workspace.newMessages" class="workspace-messages">
+        </div>
+        <p>{{workspace.initial}}</p>
+    </div>
+
+    <div class="add-workspace-icon">
+        <p>+</p>
+    </div>
 </div>

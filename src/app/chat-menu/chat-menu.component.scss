@@ -2,4 +2,60 @@
     height: 100%;
     background: #3f0e40;
     color: white;
+    padding-top: 10px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.chat-menu > .row {
+    margin: 0;
+    color: #bbb;
+    padding-left: 10px;
+}
+
+.chat-menu > .row:hover {
+    background: #350437;
+    cursor: pointer;
+}
+
+.chat-menu > .row > .chat-menu-icons {
+    margin-top: -2px;
+    margin-left: 3px;
+}
+
+.chat-menu > .row > .chat-menu-icons > span {
+    font-size: 0.65rem;
+    width: 15px;
+    color: #888;
+}
+
+.chat-menu > .row > .chat-menu-icons > p {
+    font-size: 1.2rem;
+    width: 15px;
+    color: #888;
+    margin: 0;
+}
+
+.chat-menu > .row > .chat-menu-text {
+}
+
+.chat-menu > .row > .channel-active {
+    color: white;
+    font-weight: bold;
+}
+
+.chat-menu > .row > .chat-menu-notice-count > p {
+    border-radius: 25px;
+    text-align: center;
+    background: #d26365;
+    font-size: 0.8rem;
+    color: white;
+    margin: 0;
+    margin-top: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
 }

@@ -4,6 +4,12 @@
     color: white;
     padding: 10px;
     cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 .presence:hover {
@@ -15,8 +21,8 @@
 }
 
 .presence > .row > .workspace-name {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.16rem;
+    font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
