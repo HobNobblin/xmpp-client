@@ -43,6 +43,19 @@
         </div>
     </div>
 
+    <div *ngFor="let person of people" class="row" (click)="personSelected(person.id)">
+        <div class="chat-menu-icons">
+            <span *ngIf="person.presence == 'away'" class="far fa-circle presence-away" aria-hidden="true"></span>
+            <span *ngIf="person.presence == 'active'" class="fa fa-circle presence-active" aria-hidden="true"></span>
+        </div>
+        <div class="chat-menu-text" [ngClass]="{'channel-active': person.newMessages == true}" [ngStyle]="{'width': person.noticeCount > 0 ? '155px' : 'unset'}">
+            {{person.name}}
+        </div>
+        <div *ngIf="person.noticeCount > 0" class="chat-menu-notice-count">
+            <p>{{person.noticeCount}}</p>
+        </div>
+    </div>
+
     <div class="row" style="margin-top: 15px;">
         <div class="chat-menu-icons" style="margin-top: -4px;">
             <p>+</p>

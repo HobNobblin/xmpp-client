@@ -12,11 +12,14 @@ export class ChatService {
     constructor() { 
     }
 
-    setChannelId(channelId: string) {
-        this.subject.next({ channelId: channelId });
+    setChatTopic( topicType: string, topicId: string) {
+        this.subject.next({ 
+            topicType: topicType,
+            topicId: topicId 
+        });
     }
 
-    getChannelId(): Observable<any> {
+    getChatTopic(): Observable<any> {
         return this.subject.asObservable();
     }
 

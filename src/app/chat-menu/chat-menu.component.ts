@@ -37,6 +37,37 @@ export class ChatMenuComponent implements OnInit {
         }
     ];
 
+    people = [
+        {
+            'id': '1',
+            'name': 'Mike Fawcett',
+            'newMessages': false,
+            'noticeCount': 0,
+            'presence': 'active'
+        },
+        {
+            'id': '2',
+            'name': 'Brian',
+            'newMessages': false,
+            'noticeCount': 0,
+            'presence': 'away'
+        },
+        {
+            'id': '3',
+            'name': 'Chris',
+            'newMessages': false,
+            'noticeCount': 0,
+            'presence': 'active'
+        },
+        {
+            'id': '4',
+            'name': 'JM',
+            'newMessages': false,
+            'noticeCount': 0,
+            'presence': 'active'
+        },
+    ];
+
     constructor(
         private chatService: ChatService
     ) { 
@@ -46,7 +77,11 @@ export class ChatMenuComponent implements OnInit {
     }
 
     channelSelected(channelId) {
-        this.chatService.setChannelId(channelId);
+        this.chatService.setChatTopic( 'channel', channelId );
+    }
+
+    personSelected(personId) {
+        this.chatService.setChatTopic( 'person', personId );
     }
 
 }

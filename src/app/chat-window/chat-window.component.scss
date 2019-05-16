@@ -1,5 +1,43 @@
 .chat-window {
+    position: absolute;
+    left: 280px;
+    right: 0px;
     height: 100%;
     background: white;
+}
+
+.chat-window-title {
     width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #cbcbcb;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.topic-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.message-thread {
+    position: absolute;
+    bottom: 70px;
+    top: 60px;
+}
+
+.message-box-container {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+}
+
+.message-box-container > .message-box {
+    position: absolute; 
+    left: 20px;
+    right: 20px;
+    height: 50px;
+    border: 1px solid red;
 }

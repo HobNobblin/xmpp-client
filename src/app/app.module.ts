@@ -8,17 +8,18 @@ import { ChatMenuComponent } from './chat-menu/chat-menu.component';
 import { ChatWindowComponent } from './chat-window/chat-window.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    WorkspaceMenuComponent,
-    PresenceComponent,
-    ChatMenuComponent,
-    ChatWindowComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        WorkspaceMenuComponent,
+        PresenceComponent,
+        ChatMenuComponent,
+        ChatWindowComponent
+    ],
+    imports: [
+        BrowserModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
+
 export class AppModule { }

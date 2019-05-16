@@ -11,15 +11,29 @@ import { ChatService } from '../_services/chat.service';
 export class ChatWindowComponent implements OnInit {
 
     subscription: Subscription;
-    channelId: String = "";
+    topicType: String = "";
+    topicId: String = "";
+
+    messages = [
+        {
+            'sender': 'Mike Fawcett',
+            'time': '9:17 AM',
+            'body': 'This is a test...'
+        },
+        {
+            'sender': 'Brian Coyle',
+            'time': '9:19 AM',
+            'body': 'Blah blah blah blah blah'
+        },
+    ];
 
     constructor(
         private chatService: ChatService
     ) { 
         // subscribe to home component messages
-        this.subscription = this.chatService.getChannelId().subscribe( channelId => {
-            if( channelId ) {
-                this.changeChannel(channelId.channelId);
+        this.subscription = this.chatService.getChatTopic().subscribe( chatTopic => {
+            if( chatTopic ) {
+                this.changeChannel( chatTopic.topicType, chatTopic.topicId );
             }
         });
     }
@@ -27,8 +41,9 @@ export class ChatWindowComponent implements OnInit {
     ngOnInit() {
     }
 
-    changeChannel(channelId) {
-        this.channelId = channelId;
+    changeChannel(topicType, topicId) {
+        this.topicType = topicType;
+        this.topicId = topicId;
     }
 
 }

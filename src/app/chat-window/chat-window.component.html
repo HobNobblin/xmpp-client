@@ -1,4 +1,31 @@
 <div class="chat-window">
-    Chat Window
-    {{channelId}}
+    <div class="chat-window-title">
+        <div *ngIf="topicType == 'channel'">
+            <span class="topic-name">#{{topicId}}</span>
+        </div>
+        <div *ngIf="topicType == 'person'">
+            <span class="topic-name">{{topicId}}</span>
+        </div>
+    </div>
+
+    <div class="message-thread">
+        <div *ngFor="let message of messages" class="message">
+            <div>
+                <div class="sender">
+                    {{message.sender}}
+                </div>
+                <div class="time">
+                    {{message.time}}
+                </div>
+            </div>
+            <div class="message-body">
+                {{message.body}}
+            </div>
+        </div>
+    </div>
+
+    <div class="message-box-container">
+        <div class="message-box">
+        </div>
+    </div>
 </div>

@@ -1,5 +1,5 @@
 <div class="main-window">
-    <app-workspace-menu></app-workspace-menu>
+    <app-workspace-menu *ngIf="standalone"></app-workspace-menu>
 
     <div style="width: 220px; float: left; height: 100%;">
         <app-presence></app-presence>
@@ -8,7 +8,6 @@
 
     <app-chat-window></app-chat-window>
 </div>
-
 
 <!--<section>
     <router-outlet></router-outlet>
