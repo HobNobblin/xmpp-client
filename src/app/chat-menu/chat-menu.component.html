@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <div *ngFor="let channel of channels" class="row">
+    <div *ngFor="let channel of channels" class="row" (click)="channelSelected(channel.name)">
         <div class="chat-menu-icons">
             <p>#</p>
         </div>

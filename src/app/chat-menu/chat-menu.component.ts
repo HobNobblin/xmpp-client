@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { ChatService } from '../_services/chat.service'; 
 
 @Component({
     selector: 'app-chat-menu',
     templateUrl: './chat-menu.component.html',
     styleUrls: ['./chat-menu.component.scss']
 })
+
 export class ChatMenuComponent implements OnInit {
 
     channels = [
@@ -35,9 +37,16 @@ export class ChatMenuComponent implements OnInit {
         }
     ];
 
-    constructor() { }
+    constructor(
+        private chatService: ChatService
+    ) { 
+    }
 
     ngOnInit() {
+    }
+
+    channelSelected(channelId) {
+        this.chatService.setChannelId(channelId);
     }
 
 }
