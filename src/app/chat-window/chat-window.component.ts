@@ -25,6 +25,106 @@ export class ChatWindowComponent implements OnInit {
             'time': '9:19 AM',
             'body': 'Blah blah blah blah blah'
         },
+        {
+            'sender': 'Mike Fawcett',
+            'time': '9:17 AM',
+            'body': 'This is a test...'
+        },
+        {
+            'sender': 'Brian Coyle',
+            'time': '9:19 AM',
+            'body': 'Blah blah blah blah blah'
+        },
+        {
+            'sender': 'Mike Fawcett',
+            'time': '9:17 AM',
+            'body': 'This is a test...'
+        },
+        {
+            'sender': 'Brian Coyle',
+            'time': '9:19 AM',
+            'body': 'Blah blah blah blah blah this is a bunch of text trying to get this line to wrap and make the horizonatal scroll to appear...but apparently I need even more text so that sucks.  what the f man!  this is f-in lame!!!'
+        },
+        {
+            'sender': 'Mike Fawcett',
+            'time': '9:17 AM',
+            'body': 'This is a test...'
+        },
+        {
+            'sender': 'Brian Coyle',
+            'time': '9:19 AM',
+            'body': 'Blah blah blah blah blah'
+        },
+        {
+            'sender': 'Mike Fawcett',
+            'time': '9:17 AM',
+            'body': 'This is a test...'
+        },
+        {
+            'sender': 'Brian Coyle',
+            'time': '9:19 AM',
+            'body': 'Blah blah blah blah blah'
+        },
+        {
+            'sender': 'Mike Fawcett',
+            'time': '9:17 AM',
+            'body': 'This is a test...'
+        },
+        {
+            'sender': 'Brian Coyle',
+            'time': '9:19 AM',
+            'body': 'Blah blah blah blah blah'
+        },
+        {
+            'sender': 'Mike Fawcett',
+            'time': '9:17 AM',
+            'body': 'This is a test...'
+        },
+        {
+            'sender': 'Brian Coyle',
+            'time': '9:19 AM',
+            'body': 'Blah blah blah blah blah'
+        },
+        {
+            'sender': 'Mike Fawcett',
+            'time': '9:17 AM',
+            'body': 'This is a test...'
+        },
+        {
+            'sender': 'Brian Coyle',
+            'time': '9:19 AM',
+            'body': 'Blah blah blah blah blah'
+        },
+        {
+            'sender': 'Mike Fawcett',
+            'time': '9:17 AM',
+            'body': 'This is a test...'
+        },
+        {
+            'sender': 'Brian Coyle',
+            'time': '9:19 AM',
+            'body': 'Blah blah blah blah blah'
+        },
+        {
+            'sender': 'Mike Fawcett',
+            'time': '9:17 AM',
+            'body': 'This is a test...'
+        },
+        {
+            'sender': 'Brian Coyle',
+            'time': '9:19 AM',
+            'body': 'Blah blah blah blah blah'
+        },
+        {
+            'sender': 'Mike Fawcett',
+            'time': '9:17 AM',
+            'body': 'This is a test...'
+        },
+        {
+            'sender': 'Brian Coyle',
+            'time': '9:19 AM',
+            'body': 'Blah blah blah blah blah'
+        },
     ];
 
     constructor(

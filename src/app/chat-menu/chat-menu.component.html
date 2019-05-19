@@ -43,7 +43,7 @@
         </div>
     </div>
 
-    <div *ngFor="let person of people" class="row" (click)="personSelected(person.id)">
+    <div *ngFor="let person of people" class="row" (click)="personSelected(person.name)">
         <div class="chat-menu-icons">
             <span *ngIf="person.presence == 'away'" class="far fa-circle presence-away" aria-hidden="true"></span>
             <span *ngIf="person.presence == 'active'" class="fa fa-circle presence-active" aria-hidden="true"></span>
